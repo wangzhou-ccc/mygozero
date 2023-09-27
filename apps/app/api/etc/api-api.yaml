@@ -1,3 +1,17 @@
 Name: api-api
 Host: 0.0.0.0
 Port: 8888
+OrderRPC:
+    Etcd:
+        Hosts:
+          - 127.0.0.1:2379
+        Key: order.rpc
+ProductRPC:
+  Etcd:
+    Hosts:
+      - 127.0.0.1:2379
+    Key: product.rpc
+
+JwtAuth:
+  AccessSecret: uOvKLmVfztaXGpNYd4Z0I1SiT7MweJhl
+  AccessExpire: 86400
